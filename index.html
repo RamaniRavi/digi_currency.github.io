@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Currency</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    
+    <div class="container" style="padding:10px 10px;">
+        <h2 class="h22"><strong>Digi Currency</strong></h2>
+        <div ng-include="'../header-ads.html'"></div>
+
+        <div class="well clearfix">
+          <fieldset class="scheduler-border">
+            <legend class="scheduler-border"><strong>$$$ Currency Converter $$$</strong></legend>
+
+            <form class="form-inline">
+              <table>
+                <tr>
+                  <td> <span class="input-group-addon" id="amount"><strong>Amount</strong></span></td>
+                  <td><input type="number" value="1" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" ng-model="amount"/></td>
+                </tr>
+
+                <tr>
+                  <div class="form-group">
+                  <td><label class="input-group-addon" for="exampleInput2">From </label></td>
+                  <td><select id="SELECT_1">
+                    <option label="US dollars" value="object:9" id="OPTION_2" selected="selected">
+                      US dollars
+                    </option>
+                    <option label="Canadian dollars" value="object:10" id="OPTION_3">
+                      Canadian dollars
+                    </option>
+                    <option label="euros" value="object:11" id="OPTION_4">
+                      euros
+                    </option>
+                    <option label="Afghan Afghanis" value="object:13" id="OPTION_6">
+                      Afghan Afghanis
+                    </option>
+                    <option label="Australian dollars" value="object:17" id="OPTION_10">
+                      Australian dollars
+                    </option>
+                    <option label="Brazilian reals" value="object:26" id="OPTION_19">
+                      Brazilian reals
+                    </option>
+                    <option label="Chinese yuan" value="object:33" id="OPTION_26">
+                      Chinese yuan
+                    </option>
+                    <option label="Indian rupees" value="object:57" id="OPTION_50">
+                      Indian rupees
+                    </option>
+                    <option label="Japanese yen" value="object:63" id="OPTION_56">
+                      Japanese yen
+                    </option>
+                    <option label="Sri Lankan rupees" value="object:71" id="OPTION_64">
+                      Sri Lankan rupees
+                    </option>
+                    <option label="Mexican pesos" value="object:82" id="OPTION_75">
+                      Mexican pesos
+                    </option>
+                    <option label="Nepalese rupees" value="object:89" id="OPTION_82">
+                      Nepalese rupees
+                    </option>
+                    <option label="New Zealand dollars" value="object:90" id="OPTION_83">
+                      New Zealand dollars
+                    </option>
+                    <option label="Philippine pesos" value="object:94" id="OPTION_87">
+                      Philippine pesos
+                    </option>
+                    <option label="Pakistani rupees" value="object:95" id="OPTION_88">
+                      Pakistani rupees
+                    </option>
+                    <option label="Russian rubles" value="object:101" id="OPTION_94">
+                      Russian rubles
+                    </option>
+                    <option label="Singapore dollars" value="object:106" id="OPTION_99">
+                      Singapore dollars
+                    </option>
+                    <option label="New Taiwan dollars" value="object:114" id="OPTION_107">
+                      New Taiwan dollars
+                    </option>
+                    <option label="South African rand" value="object:125" id="OPTION_118">
+                      South African rand
+                    </option>
+                  
+                  </select></td>
+                  </div>
+                </tr>
+
+                <tr>
+                  <div class="form-group">
+                  <td><label class="input-group-addon" for="exampleInput3">To </label></td>
+                  <td><select id="SELECT_1">
+                    <option label="US dollars" value="object:9" id="OPTION_2">
+                      US dollars
+                    </option>
+                    <option label="Canadian dollars" value="object:10" id="OPTION_3">
+                      Canadian dollars
+                    </option>
+                    <option label="euros" value="object:11" id="OPTION_4">
+                      euros
+                    </option>
+                    <option label="Afghan Afghanis" value="object:13" id="OPTION_6">
+                      Afghan Afghanis
+                    </option>
+                    <option label="Australian dollars" value="object:17" id="OPTION_10">
+                      Australian dollars
+                    </option>
+                    <option label="Brazilian reals" value="object:26" id="OPTION_19">
+                      Brazilian reals
+                    </option>
+                    <option label="Chinese yuan" value="object:33" id="OPTION_26">
+                      Chinese yuan
+                    </option>
+                    <option label="Indian rupees" value="object:57" id="OPTION_50" selected="selected">
+                      Indian rupees
+                    </option>
+                    <option label="Japanese yen" value="object:63" id="OPTION_56">
+                      Japanese yen
+                    </option>
+                    <option label="Sri Lankan rupees" value="object:71" id="OPTION_64">
+                      Sri Lankan rupees
+                    </option>
+                    <option label="Mexican pesos" value="object:82" id="OPTION_75">
+                      Mexican pesos
+                    </option>
+                    <option label="Nepalese rupees" value="object:89" id="OPTION_82">
+                      Nepalese rupees
+                    </option>
+                    <option label="New Zealand dollars" value="object:90" id="OPTION_83">
+                      New Zealand dollars
+                    </option>
+                    <option label="Philippine pesos" value="object:94" id="OPTION_87">
+                      Philippine pesos
+                    </option>
+                    <option label="Pakistani rupees" value="object:95" id="OPTION_88">
+                      Pakistani rupees
+                    </option>
+                    <option label="Russian rubles" value="object:101" id="OPTION_94">
+                      Russian rubles
+                    </option>
+                    <option label="Singapore dollars" value="object:106" id="OPTION_99">
+                      Singapore dollars
+                    </option>
+                    <option label="New Taiwan dollars" value="object:114" id="OPTION_107">
+                      New Taiwan dollars
+                    </option>
+                    <option label="South African rand" value="object:125" id="OPTION_118">
+                      South African rand
+                    </option>
+                  
+                  </select></td>
+                  </div>
+                </tr>
+
+                <tr>
+                  <td><button type="submit" id="btn" ng-click="convert_in_currency()">convert</button>
+                  </td>
+                </tr>
+              </table>
+
+              
+            </form>
+          </fieldset>
+        </div>
+</body>
+</html>
