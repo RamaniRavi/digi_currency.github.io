@@ -1,172 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--Code By Webdevtrick ( https://webdevtrick.com )-->
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy Currency</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+  <meta charset="UTF-8">
+  <title>JavaScript Currency Converter | Webdevtrick.com</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
-    <div class="container" style="padding:10px 10px;">
-        <h2 class="h22"><strong>Digi Currency</strong></h2>
-        <div ng-include="'../header-ads.html'"></div>
+<div class="container">
 
-        <div class="well clearfix">
-          <fieldset class="scheduler-border">
-            <legend class="scheduler-border"><strong>$$$ Currency Converter $$$</strong></legend>
+<h2 class="h22"><strong>Digi Currency</strong></h2>
+<div class="main">
+	<fieldset class="scheduler-border">
+		<legend class="scheduler-border"><strong>$$$ Currency Converter $$$</strong></legend>
+<table>
+	<tr>
+		<td><strong>Amount</strong></td>
+		<td><input type="number" id="from_ammount" placeholder="0" value=1 class="form-control"></td>
+	</tr>
 
-            <form class="form-inline">
-              <table>
-                <tr>
-                  <td> <span class="input-group-addon" id="amount"><strong>Amount</strong></span></td>
-                  <td><input type="number" value="1" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" ng-model="amount"/></td>
-                </tr>
+	<tr>
+		<div class="currency"></div>
+		<td><label class="input-group-addon" for="forinput2">From</label></td>
+		<td>
+			<select id="from_currency" class="form-control">
+				<option value="AED">AED</option>
+				<option value="ARS">ARS</option>
+				<option value="AUD">AUD</option>
+				<option value="BGN">BGN</option>
+				<option value="BRL">BRL</option>
+				<option value="BSD">BSD</option>
+				<option value="CAD">CAD</option>
+				<option value="CHF">CHF</option>
+				<option value="CLP">CLP</option>
+				<option value="CNY">CNY</option>
+				<option value="COP">COP</option>
+				<option value="CZK">CZK</option>
+				<option value="DKK">DKK</option>
+				<option value="DOP">DOP</option>
+				<option value="EGP">EGP</option>
+				<option value="EUR">EUR</option>
+				<option value="FJD">FJD</option>
+				<option value="GBP">GBP</option>
+				<option value="GTQ">GTQ</option>
+				<option value="HKD">HKD</option>
+				<option value="HRK">HRK</option>
+				<option value="HUF">HUF</option>
+				<option value="IDR">IDR</option>
+				<option value="ILS">ILS</option>
+				<option value="INR">INR</option>
+				<option value="ISK">ISK</option>
+				<option value="JPY">JPY</option>
+				<option value="KRW">KRW</option>
+				<option value="KZT">KZT</option>
+				<option value="MXN">MXN</option>
+				<option value="MYR">MYR</option>
+				<option value="NOK">NOK</option>
+				<option value="NZD">NZD</option>
+				<option value="PAB">PAB</option>
+				<option value="PEN">PEN</option>
+				<option value="PHP">PHP</option>
+				<option value="PKR">PKR</option>
+				<option value="PLN">PLN</option>
+				<option value="PYG">PYG</option>
+				<option value="RON">RON</option>
+				<option value="RUB">RUB</option>
+				<option value="SAR">SAR</option>
+				<option value="SEK">SEK</option>
+				<option value="SGD">SGD</option>
+				<option value="THB">THB</option>
+				<option value="TRY">TRY</option>
+				<option value="TWD">TWD</option>
+				<option value="UAH">UAH</option>
+				<option value="USD" selected>USD</option>
+				<option value="UYU">UYU</option>
+				<option value="VND">VND</option>
+				<option value="ZAR">ZAR</option>
+			</select>
+		</div>
+		</td>
+	</tr>
 
-                <tr>
-                  <div class="form-group">
-                  <td><label class="input-group-addon" for="exampleInput2">From </label></td>
-                  <td><select id="SELECT_1">
-                    <option label="US dollars" value="object:9" id="OPTION_2" selected="selected">
-                      US dollars
-                    </option>
-                    <option label="Canadian dollars" value="object:10" id="OPTION_3">
-                      Canadian dollars
-                    </option>
-                    <option label="euros" value="object:11" id="OPTION_4">
-                      euros
-                    </option>
-                    <option label="Afghan Afghanis" value="object:13" id="OPTION_6">
-                      Afghan Afghanis
-                    </option>
-                    <option label="Australian dollars" value="object:17" id="OPTION_10">
-                      Australian dollars
-                    </option>
-                    <option label="Brazilian reals" value="object:26" id="OPTION_19">
-                      Brazilian reals
-                    </option>
-                    <option label="Chinese yuan" value="object:33" id="OPTION_26">
-                      Chinese yuan
-                    </option>
-                    <option label="Indian rupees" value="object:57" id="OPTION_50">
-                      Indian rupees
-                    </option>
-                    <option label="Japanese yen" value="object:63" id="OPTION_56">
-                      Japanese yen
-                    </option>
-                    <option label="Sri Lankan rupees" value="object:71" id="OPTION_64">
-                      Sri Lankan rupees
-                    </option>
-                    <option label="Mexican pesos" value="object:82" id="OPTION_75">
-                      Mexican pesos
-                    </option>
-                    <option label="Nepalese rupees" value="object:89" id="OPTION_82">
-                      Nepalese rupees
-                    </option>
-                    <option label="New Zealand dollars" value="object:90" id="OPTION_83">
-                      New Zealand dollars
-                    </option>
-                    <option label="Philippine pesos" value="object:94" id="OPTION_87">
-                      Philippine pesos
-                    </option>
-                    <option label="Pakistani rupees" value="object:95" id="OPTION_88">
-                      Pakistani rupees
-                    </option>
-                    <option label="Russian rubles" value="object:101" id="OPTION_94">
-                      Russian rubles
-                    </option>
-                    <option label="Singapore dollars" value="object:106" id="OPTION_99">
-                      Singapore dollars
-                    </option>
-                    <option label="New Taiwan dollars" value="object:114" id="OPTION_107">
-                      New Taiwan dollars
-                    </option>
-                    <option label="South African rand" value="object:125" id="OPTION_118">
-                      South African rand
-                    </option>
-                  
-                  </select></td>
-                  </div>
-                </tr>
+	<tr>
+		<div class="currency">
+		<td><label class="input-group-addon" for="exampleInput3">To </label></td>
+		<td>
+					<select id="to_currency" class="form-control"><option value="AED">AED</option>
+					<option value="ARS">ARS</option>
+					<option value="AUD">AUD</option>
+					<option value="BGN">BGN</option>
+					<option value="BRL">BRL</option>
+					<option value="BSD">BSD</option>
+					<option value="CAD">CAD</option>
+					<option value="CHF">CHF</option>
+					<option value="CLP">CLP</option>
+					<option value="CNY">CNY</option>
+					<option value="COP">COP</option>
+					<option value="CZK">CZK</option>
+					<option value="DKK">DKK</option>
+					<option value="DOP">DOP</option>
+					<option value="EGP">EGP</option>
+					<option value="EUR">EUR</option>
+					<option value="FJD">FJD</option>
+					<option value="GBP">GBP</option>
+					<option value="GTQ">GTQ</option>
+					<option value="HKD">HKD</option>
+					<option value="HRK">HRK</option>
+					<option value="HUF">HUF</option>
+					<option value="IDR">IDR</option>
+					<option value="ILS">ILS</option>
+					<option value="INR" selected>INR</option>
+					<option value="ISK">ISK</option>
+					<option value="JPY">JPY</option>
+					<option value="KRW">KRW</option>
+					<option value="KZT">KZT</option>
+					<option value="MXN">MXN</option>
+					<option value="MYR">MYR</option>
+					<option value="NOK">NOK</option>
+					<option value="NZD">NZD</option>
+					<option value="PAB">PAB</option>
+					<option value="PEN">PEN</option>
+					<option value="PHP">PHP</option>
+					<option value="PKR">PKR</option>
+					<option value="PLN">PLN</option>
+					<option value="PYG">PYG</option>
+					<option value="RON">RON</option>
+					<option value="RUB">RUB</option>
+					<option value="SAR">SAR</option>
+					<option value="SEK">SEK</option>
+					<option value="SGD">SGD</option>
+					<option value="THB">THB</option>
+					<option value="TRY">TRY</option>
+					<option value="TWD">TWD</option>
+					<option value="UAH">UAH</option>
+					<option value="USD">USD</option>
+					<option value="UYU">UYU</option>
+					<option value="VND">VND</option>
+					<option value="ZAR">ZAR</option>
+				</select>
+		</td>
+	</div>
+	</tr>
+</table>
 
-                <tr>
-                  <div class="form-group">
-                  <td><label class="input-group-addon" for="exampleInput3">To </label></td>
-                  <td><select id="SELECT_1">
-                    <option label="US dollars" value="object:9" id="OPTION_2">
-                      US dollars
-                    </option>
-                    <option label="Canadian dollars" value="object:10" id="OPTION_3">
-                      Canadian dollars
-                    </option>
-                    <option label="euros" value="object:11" id="OPTION_4">
-                      euros
-                    </option>
-                    <option label="Afghan Afghanis" value="object:13" id="OPTION_6">
-                      Afghan Afghanis
-                    </option>
-                    <option label="Australian dollars" value="object:17" id="OPTION_10">
-                      Australian dollars
-                    </option>
-                    <option label="Brazilian reals" value="object:26" id="OPTION_19">
-                      Brazilian reals
-                    </option>
-                    <option label="Chinese yuan" value="object:33" id="OPTION_26">
-                      Chinese yuan
-                    </option>
-                    <option label="Indian rupees" value="object:57" id="OPTION_50" selected="selected">
-                      Indian rupees
-                    </option>
-                    <option label="Japanese yen" value="object:63" id="OPTION_56">
-                      Japanese yen
-                    </option>
-                    <option label="Sri Lankan rupees" value="object:71" id="OPTION_64">
-                      Sri Lankan rupees
-                    </option>
-                    <option label="Mexican pesos" value="object:82" id="OPTION_75">
-                      Mexican pesos
-                    </option>
-                    <option label="Nepalese rupees" value="object:89" id="OPTION_82">
-                      Nepalese rupees
-                    </option>
-                    <option label="New Zealand dollars" value="object:90" id="OPTION_83">
-                      New Zealand dollars
-                    </option>
-                    <option label="Philippine pesos" value="object:94" id="OPTION_87">
-                      Philippine pesos
-                    </option>
-                    <option label="Pakistani rupees" value="object:95" id="OPTION_88">
-                      Pakistani rupees
-                    </option>
-                    <option label="Russian rubles" value="object:101" id="OPTION_94">
-                      Russian rubles
-                    </option>
-                    <option label="Singapore dollars" value="object:106" id="OPTION_99">
-                      Singapore dollars
-                    </option>
-                    <option label="New Taiwan dollars" value="object:114" id="OPTION_107">
-                      New Taiwan dollars
-                    </option>
-                    <option label="South African rand" value="object:125" id="OPTION_118">
-                      South African rand
-                    </option>
-                  
-                  </select></td>
-                  </div>
-                </tr>
+<div class="middle">
+	<button id="exchange">
+		<i class="fas fa-exchange-alt"></i>
+	</button>
+	<div class="rate" id="rate"></div>
+</div>
 
-                <tr>
-                  <td><button type="submit" id="btn" ng-click="convert_in_currency()">convert</button>
-                  </td>
-                </tr>
-              </table>
+<input type="number" id="to_ammount" placeholder="0" class="form-control" />
+</div>
+</div>
+</fieldset>
+  <script  src="function.js"></script>
 
-              
-            </form>
-          </fieldset>
-        </div>
 </body>
 </html>
