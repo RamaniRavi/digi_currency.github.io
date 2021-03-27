@@ -1,4 +1,5 @@
-// Code By Webdevtrick ( https://webdevtrick.com )
+alert("Group : 2 \nTitle : Digi Currency");
+
 const from_currencyEl = document.getElementById('from_currency');
 const from_ammountEl = document.getElementById('from_ammount');
 const to_currencyEl = document.getElementById('to_currency');
@@ -32,3 +33,8 @@ function calculate() {
 }
 
 calculate();
+
+var text = "\n --------------------------------\nGroup 2 \nTital : Digi Currency \n--------------------------------  \n----Group Members----\n1. Chirag Parmar (180420116034) \n2. Mihir Radadiya (180420116047) \n3. Ravi Ramani (180420116048)\n4. Harsad Sorathiya (180420116056) \n5. Arshit Sutariya (180420116057)";
+function alertbox(){
+	alert(text);
+}

@@ -1,31 +1,23 @@
-/* Code By Webdevtrick ( https://webdevtrick.com ) */
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 * {
 	box-sizing: border-box;
 }
-/* body {
-	background: linear-gradient(to bottom, #aff2ff 0%, #aff2ff 50%, #50dcff 50%, #50dcff 100%);
-	font-family: 'Muli', sans-serif;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	margin: 0;
-} */
+
 td{
 	padding: 5px 20px;
 }
+
 body {
     background-image: url("1.jpg");
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.42;
     font-family: Arial, Helvetica, sans-serif;
 }
-.h11{
+
+.h22{
 	text-align: center;
 	font-family: Cabin Condensed, sans-serif;
-	font-size: 16px;
+	font-size: 30px;
 	font-weight: 100;
 	color: rgba(0, 0, 0, 1);
 	text-transform: uppercase;
@@ -35,26 +27,15 @@ body {
 	letter-spacing: 1.5px;
 	text-shadow: px 0px 13px rgba(226, 3, 3, 0.993);
 }
-#from_currency ,#to_currency{
-	font-size: 16px;
+
+#from_currency{
+	font-size: 15px;
 }
-/* .scheduler-border{
-    align-items: center;
-    background-image: url("3.jpg");
-	margin: 50%;
-}
-.legend-line{
-	padding: 5px 15px;
-} */
+
 .main{
 	margin: 0 30%;
-	background-image: url("/3.jpg");
-
 }
-/* .currency {
-	align-items: center;
-	
-} */
+
 .currency select {
 	background: transparent;
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
@@ -68,18 +49,21 @@ body {
     -webkit-appearance: none;
     appearance: none;
 }
+
 .currency input {
 	border: 0;
 	background: transparent;
 	font-size: 22px;
 	text-align: right;
 }
+
 .middle {
 	color: #f59300;
 	display: flex;
 	align-items: center;
 	column-gap: 20px;
 }
+
 .middle button {
 	background-color: #fff;
 	border: 2px solid #ecf0f1;
@@ -94,9 +78,11 @@ body {
 	width: 30px;
 	transform: rotate(90deg);
 }
+
 .middle button:active {
 	transform: rotate(90deg) scale(0.9);
 }
+
 .middle .rate {
 	background-color: #fff;
 	border: 2px solid #ecf0f1;
@@ -109,6 +95,7 @@ body {
 	padding: 0 10px;
 	margin: 30px 15px 30px 25px;
 }
+
 select:focus, input:focus, button:focus {
 	outline: 0;
 }
@@ -118,7 +105,7 @@ select:focus, input:focus, button:focus {
     width: auto;
     height: 34px;
     padding: 6px 12px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.42857143;
     color: #555;
     background-color: #fff;
@@ -133,10 +120,32 @@ select:focus, input:focus, button:focus {
 
 #to_ammount{
 	margin: 15px 15px;
-	font-size: 16px;
 }
 
 .scheduler-border{
     align-items: center;
-    background-image: url("3.jpg");
+    background-color: #f4f9f9;
 }
+
+.group_2 {
+	font-family: arial;
+	color: #14396A !important;
+	font-size: 15px;
+	text-shadow: 1px 1px 0px #7CACDE;
+	box-shadow: 1px 1px 1px #BEE2F9;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 2px solid #3866A3;
+	background: #63B8EE;
+	background: linear-gradient(to top, #63B8EE, #468CCF);
+  }
+  .group_2:hover {
+	color: #14396A !important;
+	background: #468CCF;
+	background: linear-gradient(to top, #468CCF, #63B8EE);
+  }
+
+  .group{
+	  align-items: center;
+	  margin: 20px 40%;
+  }
